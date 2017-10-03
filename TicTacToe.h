@@ -7,6 +7,7 @@
 #include <set>
 #include <time.h>
 #include <vector>
+#include <algorithm>
 
 #define EMPTYSPOT '_'
 
