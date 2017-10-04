@@ -16,5 +16,5 @@ before_install:
   - eval "${MATRIX_EVAL}"
 
 script:
- - $CXX main.cpp
+ - $CXX tictactoe.cpp
  - ./a.out
