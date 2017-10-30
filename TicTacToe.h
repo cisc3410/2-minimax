@@ -129,6 +129,12 @@ class TicTacToeAgent {
 	// should only be called on terminal node. return the utility 
 	// of this board to this agent (winutil, loseutil, or drawutil)
 	int Utility(const TicTacToeBoard& b) {
+		char c;
+		if (b.won(&c)) {
+			if (c==chr) return 1;
+			else return -1;
+		}
+		return 0;
 	}
 
 };
