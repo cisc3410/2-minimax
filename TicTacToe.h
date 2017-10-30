@@ -131,10 +131,11 @@ class TicTacToeAgent {
 	int Utility(const TicTacToeBoard& b) {
 		char c;
 		if (b.won(&c)) {
-			if (c==chr) return 1;
-			else return -1;
+			if (c==chr) return winutil;
+			else return loseutil;
 		}
-		return 0;
+		else if (b.full()) return drawutil;
+		else throw std::exception();
 	}
 
 };
